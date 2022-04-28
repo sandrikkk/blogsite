@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Hello {% endblock title %}
+{% block css_file %}
+<link rel="stylesheet" href="{% static 'blog/style.css' %}">
+
+{% endblock css_file %}
+{% block body %}
+<div class="main">
+    <div id="nav-background">
+        <div id="nav-container">
+            <header id="nav-header">
+                <h1><a href="#" id="nav-logo">Sandro's Blog !</a></h1>
+                <div id="nav-menu-button">MENU</div>
+            </header>
+            <nav>
+                <ul class="nav-ul hide-ul">
+                    <li><a class="nav-link" href="#">Home</a></li>
+                    <li><a class="nav-link" href="#">News</a></li>
+                    <li><a class="nav-link" href="#">Contact</a></li>
+                    <li><a class="nav-link" href="#">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div id="main-content">
+        <section id="welcome">
+            <header>
+                <img src="#" alt="Sandro-The Author Of This Blog" />
+                <h2>SANDRO IASHVILI</h2>
+            </header>
+            <p>Hi, I am Sandro and I love to blog about tech and the world!</p>
+        </section>
+        <hr>
+    </div>
+    <h2 class = section-h2> Latest Thoughts:</h2>
+        <section id = "latest-posts">
+
+            <div class = "card">
+                <div class = "card-image"></div>
+                <h2>Title</h2>
+                <p>Text</p>
+            </div>
+            <div class = "card">
+                <div class = "card-image"></div>
+                <h2>Title</h2>
+                <p>Text</p>
+            </div>
+            <div class = "card">
+                <div class = "card-image"></div>
+                <h2>Title</h2>
+                <p>Text</p>
+            </div>
+        </section>
+    {% endblock body %}
